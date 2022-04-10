@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5,h6,p, a {
 /* Re-usable Utiity Classes  */
 
 .tall-50 { min-height: 50vh; }
+.tall-50-gallery { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
@@ -177,6 +178,22 @@ footer h2 {
 .bg-water {background-image: url('/images/water-light.jpg')}
 .bg-about {background-image: url('/images/water-light.jpg')}
 
+.bg-gallery-1 {
+    background-image: url('/images/negroni-gallery-1.jpg');
+    padding-bottom: 40%;
+    border: 10px solid #183039;
+}
+.bg-gallery-2 {
+    background-image: url('/images/negroni-gallery-2.jpg');
+    padding-bottom: 40%;
+    border: 10px solid #183039;
+}
+.bg-gallery-3 {
+    background-image: url('/images/negroni-gallery-3.jpg');
+    padding-bottom: 40%;
+    border: 10px solid #183039;
+}
+
 .window-shape {
     border-radius: 50rem 0 0 50rem;
 }
@@ -186,8 +203,17 @@ img {
     
 }
 
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+
 /* Gridlex SM  */
 @media(max-width: 48em) {
+
+   .tall-50-gallery { min-height: 0;}
 
     .mob-hide { display: none; }
 

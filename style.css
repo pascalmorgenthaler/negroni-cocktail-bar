@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+img { max-width: 100%;;}
+
 /*  Temporary Styles */
 
 /* * {
@@ -50,6 +52,9 @@ h1,h2,h3,h4,h5,h6,p, a {
 
 .margin-b-0 { margin-bottom: 0; }
 
+.margin-b-25 { margin-bottom: 2.5rem;}
+
+.lh-0 { line-height: 0.8;}
 
 .bg-featured { background-color: #183039;  }
 .bg-dark     { background-color: #24282B;  }
@@ -164,11 +169,22 @@ footer h2 {
     background-repeat: no-repeat;
 }
 
+.bg-pattern {background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/so-white.png')}
+
 .bg-glass {background-image: url('/images/negroni-glass-faded.jpg')}
 .bg-window {background-image: url('/images/negroni-2.jpg')}
 .bg-plant {background-image: url('/images/negroni-4.jpg')}
 .bg-water {background-image: url('/images/water-light.jpg')}
+.bg-about {background-image: url('/images/water-light.jpg')}
 
+.window-shape {
+    border-radius: 50rem 0 0 50rem;
+}
+
+img {
+    padding: 5%;
+    
+}
 
 /* Gridlex SM  */
 @media(max-width: 48em) {
@@ -188,4 +204,5 @@ footer h2 {
 @media(max-width: 25em) {
     h1 { font-size: 4.5rem; }
     h1 span { font-size: 1.5rem; }  
+    .margin-b-25 {font-size: 3.5rem; }
 }

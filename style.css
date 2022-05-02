@@ -1,7 +1,17 @@
 /*  NOTES
 
 
+
+
 */
+
+:root {
+    --featured: #183039
+    --dark: #24282B
+    --featured-text: #183039
+    --serif: 'Martel', serif;
+    --heading: 'Didot', Georgia, serif;
+}
 
 * {
     padding: 0;
@@ -57,11 +67,11 @@ h1,h2,h3,h4,h5,h6,p, a {
 
 .lh-0 { line-height: 0.8;}
 
-.bg-featured { background-color: #183039;  }
-.bg-dark     { background-color: #24282B;  }
+.bg-featured { background-color: var(--featured);  }
+.bg-dark     { background-color: var(--dark);  }
 
 .light-text     { color: white; } 
-.featured-text  { color: #183039; } 
+.featured-text  { color: var(--featured-text); } 
 
 
 .left   { text-align: left; }
@@ -72,13 +82,13 @@ h1,h2,h3,h4,h5,h6,p, a {
 /* General typography & universal styles  */
 
 body {
-    font-family: 'Martel', serif;
+    font-family: var(--serif);
     font-weight: 200;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-family: 'Didot', Georgia, serif;
+    font-family: var(--heading)
 }
 h1 {
     font-size: 10rem;
@@ -164,7 +174,7 @@ footer h2 {
 /* Images & Background Images */
 
 .bg-image {
-    background-color: #183039;
+    background-color: var(--featured);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -181,17 +191,17 @@ footer h2 {
 .bg-gallery-1 {
     background-image: url('/images/negroni-gallery-1.jpg');
     padding-bottom: 40%;
-    border: 10px solid #183039;
+    border: 10px solid var(--featured);
 }
 .bg-gallery-2 {
     background-image: url('/images/negroni-gallery-2.jpg');
     padding-bottom: 40%;
-    border: 10px solid #183039;
+    border: 10px solid var(--featured);
 }
 .bg-gallery-3 {
     background-image: url('/images/negroni-gallery-3.jpg');
     padding-bottom: 40%;
-    border: 10px solid #183039;
+    border: 10px solid var(--featured);
 }
 
 .window-shape {
